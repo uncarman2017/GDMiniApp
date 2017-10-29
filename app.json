@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mycourse/mycourse",
+    "pages/index/about",
+    "pages/mycourse/addpower",
+    "pages/mycourse/addoxygen",
+    "pages/mycourse/addstretching",
+    "pages/mycourse/addselffeeling"
+
+  ],
+  
+  "window":{
+    "backgroundTextStyle":"white",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Mini记",
+    "navigationBarBackgroundColor": "#292929",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+  },
+   "tabBar":{
+    "color":"#000",
+    "selectedColor":"#48c33c",
+    "borderStyle":"block",
+    "backgroundColor":"#ffffff",
+    "list":[{
+      "pagePath":"pages/index/index",
+      "iconPath":"assets/img/footer/index.png",
+      "selectedIconPath":"assets/img/footer/indexS.png",
+      "text":"首页"
+    },
+    {
+      "pagePath":"pages/logs/logs",
+      "iconPath":"assets/img/footer/logs.png",
+      "selectedIconPath":"assets/img/footer/logsS.png",
+      "text":"记事"
+    },
+    {
+      "pagePath":"pages/index/about",
+      "iconPath":"assets/img/footer/logs.png",
+      "selectedIconPath":"assets/img/footer/logsS.png",
+      "text":"关于"
+    }]
+  }
+}

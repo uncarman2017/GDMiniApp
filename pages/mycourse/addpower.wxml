@@ -1,0 +1,29 @@
+<view class="page">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+        <view class="section">
+            <view class="labelText_Green">课程名称</view>
+            <input name="courseName" style="padding-left:8px;" placeholder="课程名称" maxlength="20" auto-focus/>
+        </view>
+        <view class="section">
+            <view class="labelText_Green">重量(kg)</view>
+            <slider name="weight" style="padding-left:8px;" show-value value="10" min="1" max="200"></slider>
+        </view>
+        <view class="section">
+            <view class="labelText_Green">次数</view>
+            <slider name="times" style="padding-left:8px;" show-value value="5" min="1" max="100"></slider>
+        </view>
+        <view class="section">
+            <view class="labelText_Green">组数</view>
+            <slider name="groups" style="padding-left:8px;" show-value value="5" min="1" max="100"></slider>
+        </view>
+        <view class="section">
+            <view class="labelText_Green">间隔时间(分钟)</view>
+            <slider name="intervalTimes" style="padding-left:8px;" show-value value="5" min="1" max="100"></slider>
+        </view>
+        <view class="section">
+            <button type="primary" size="default"  plain="false" style="width:97%" form-type="submit">添加</button>
+        </view>
+    </form>
+
+
+</view>

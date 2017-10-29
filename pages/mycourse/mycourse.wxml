@@ -1,0 +1,125 @@
+<view class="swiper-tab">
+  <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">力量</view>
+  <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">有氧</view>
+  <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">拉伸</view>
+  <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">感受</view>
+</view>
+<modal title="确定操作" confirm-text="确定" cancel-text="取消" hidden="{{modalHidden}}" mask bindconfirm="confirm" bindcancel="cancel">
+  确定执行此操作?
+</modal>
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}rpx;width:100%;" bindchange="bindChange">
+  <swiper-item>
+    <scroll-view scroll-y="true" class="tm">
+      <button type="primary" size="default" plain="true" style="width:97%" hover-class="button-hover" bindtap="addPower">添加</button>
+      <view class="m" wx:for="{{powerCourse}}" bindtap="go" id="{{index}}">
+        <label class="m-data-left">课程名称:
+          <text class="m-green">{{item.courseName}}</text>
+          <button type="primary" size="mini" plain="true" hover-class="button-hover" data-id="{{item.id}}" bindtap="delPower">删除
+          </button>
+        </label>
+
+        <!--<scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">-->
+        <view class="m-data">
+          <view class="m-data-left">
+            <label class="m-data-top-left_50">重量:
+              <text class="m-green">{{item.weight}}kg</text>
+            </label>
+            <label class="m-data-top-left_50">次数:
+              <text class="m-green">{{item.times}}</text>
+            </label>
+          </view>
+          <view class="m-data-right">
+            <label class="m-data-top-left_50">组数:
+              <text class="m-green">{{item.groups}}</text>
+            </label>
+            <label class="m-data-top-left_50">间隔时间:
+              <text class="m-green">{{item.intervalTimes}}分钟</text>
+            </label>
+          </view>
+        </view>
+
+        <!--<view class="m-data">-->
+
+        <!--<button type="warn" size="mini" plain="true" hover-class="button-hover" bindtap="delPower"></button>-->
+
+        <!--</view>-->
+
+        <!--</scroll-view>-->
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y="true" class="tm">
+      <button type="primary" size="default" plain="true" style="width:97%" hover-class="button-hover" bindtap="addOxygen">添加</button>
+      <view class="m" wx:for="{{aerobicCourse}}" bindtap="go" id="{{index}}">
+        <label class="m-data-left">课程名称:
+          <text class="m-green">{{item.courseName}}</text>
+          <button type="primary" size="mini" plain="true" hover-class="button-hover" data-id="{{item.id}}" bindtap="delOxygen">删除
+          </button>
+        </label>
+        <view class="m-data">
+          <view class="m-data-left">
+            <label class="m-data-top-left_50">次数:
+              <text class="m-green">{{item.period}}次</text>
+            </label>
+            <label class="m-data-top-left_50">距离:
+              <text class="m-green">{{item.distance}}公里</text>
+            </label>
+          </view>
+          <view class="m-data-right">
+            <label class="m-data-top-left_50">速度:
+              <text class="m-green">{{item.speed}}公里/小时</text>
+            </label>
+            <label class="m-data-top-left_50">阻力:
+              <text class="m-green">{{item.resistance}}kg</text>
+            </label>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y="true" class="tm">
+      <button type="primary" size="default" plain="true" style="width:97%" hover-class="button-hover" bindtap="addStretching">添加
+      </button>
+      <view class="m" wx:for="{{stretchingCourse}}" bindtap="go" id="{{index}}">
+        <label class="m-data-left">课程名称:
+          <text class="m-green">{{item.courseName}}</text>
+          <button type="primary" size="mini" plain="true" hover-class="button-hover" data-id="{{item.id}}" bindtap="delStretching">删除
+          </button>
+        </label>
+        <view class="m-data">
+          <view class="m-data-left">
+            <label class="m-data-top-left_50">次数:
+              <text class="m-green">{{item.period}}次</text>
+            </label>
+          </view>
+          <view class="m-data-right">
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view scroll-y="true" class="tm">
+      <button type="primary" size="default" plain="true" style="width:97%" hover-class="button-hover" bindtap="addSelfFeeling">添加
+      </button>
+      <view class="m" wx:for="{{selfFeeling}}" bindtap="go" id="{{index}}">
+        <view class="m-data">
+          <view class="m-data-left">
+            <label class="m-data-top-left_100">记录日期:
+              <text class="m-green" style="padding-right:5px">{{item.recdate}}</text>
+              <button type="primary" size="mini" plain="true" hover-class="button-hover" data-id="{{item.id}}" bindtap="delSelfFeeling">删除
+              </button>
+            </label>
+          </view>
+          <view class="m-data-left">
+            <label class="m-data-top-left_100">内容:
+              <text class="m-green">{{item.content}}</text>
+            </label>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

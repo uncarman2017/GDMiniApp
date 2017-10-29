@@ -1,0 +1,105 @@
+.log-list {
+    display: flex;
+    flex-direction: column;
+    padding: 40 rpx;
+}
+
+.log-item {
+    margin: 10 rpx;
+}
+
+.swiper-tab {
+    width: 100%;
+    border-bottom: 2 rpx solid #777777;
+    text-align: center;
+    line-height: 80 rpx;
+}
+
+.swiper-tab-list {
+    font-size: 30 rpx;
+    display: inline-block;
+    width: 25%;
+    color: #777777;
+}
+
+.on {
+    color: #da7c0c;
+    border-bottom: 5 rpx solid #da7c0c;
+}
+
+.swiper-box {
+    display: block;
+    overflow: hidden;
+}
+
+.swiper-box view {
+    text-align: center;
+}
+
+/**index.wxss**/
+.tm {
+    height: 600px;
+    width: 900px;
+    padding: 5 rpx;
+}
+
+.m {
+    width: 730rpx;
+    border: 1px solid #242f34;
+    border-radius: 3px;
+    margin: 5 rpx auto;
+    padding: 10 rpx;
+    background-color: #242f34;
+    color: #fff;
+}
+
+.m-data {
+    width: 100%;
+    margin-top: 20 rpx;
+    display: flex;
+    flex-direction: column;
+}
+
+.m-data-left {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    margin-top: 10 rpx;
+}
+
+.m-data-right {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    margin-top: 10 rpx;
+}
+
+.m-data-top-left_50 {
+    text-align: left;
+    width: 50%;
+}
+
+.m-data-top-right_50 {
+    text-align: right;
+    width: 50%;
+}
+
+.m-data-top-left_100 {
+    text-align: left;
+    width: 100%;
+}
+
+.m-data-top-right_100 {
+    text-align: right;
+    width: 100%;
+}
+
+.m-green {
+    color: #0feb00;
+}
+
+.scroll-view-item_H {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+}

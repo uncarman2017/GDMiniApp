@@ -1,0 +1,10 @@
+<view class="container">
+  <!--<view  bindtap="bindViewTap" class="index">-->
+    <image class="logoPic" src="../../assets/img/timg.jpg" ></image>
+    <navigator url="../mycourse/mycourse" hover-class="navigator-hover" open-type="redirect">  <text class="logoTxt">{{logoText}}
+    </text></navigator>
+  <text class="version">{{version}}
+    </text>
+ <!-- </view>-->
+ 
+</view>

@@ -1,0 +1,27 @@
+<view class="page">
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <view class="section">
+      <view class="labelText_Green">课程名称</view>
+      <input name="courseName" style="padding-left:8px;" placeholder="课程名称" maxlength="20" auto-focus/>
+    </view>
+    <view class="section">
+      <view class="labelText_Green">次数</view>
+      <slider name="period" style="padding-left:8px;" show-value value="5" min="1" max="30"></slider>
+    </view>
+    <view class="section">
+      <view class="labelText_Green">距离(公里)</view>
+      <slider name="distance" style="padding-left:8px;" show-value value="5" min="1" max="100"></slider>
+    </view>
+    <view class="section">
+      <view class="labelText_Green">速度(公里/小时)</view>
+      <slider name="speed" style="padding-left:8px;" show-value value="5" min="1" max="100"></slider>
+    </view>
+    <view class="section">
+      <view class="labelText_Green">阻力(kg)</view>
+      <slider name="resistance" style="padding-left:8px;" show-value value="5" min="1" max="100"></slider>
+    </view>
+    <view class="section">
+      <button type="primary" size="default" style="width:97%" plain="false" form-type="submit">添加</button>
+    </view>
+  </form>
+</view>

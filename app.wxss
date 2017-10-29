@@ -1,0 +1,203 @@
+/**app.wxss**/
+page {
+    background-color: #fbf9fe;
+    height: 100%;
+}
+
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1px 0;
+    box-sizing: border-box;
+    /*font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;*/
+
+}
+
+
+.navigator-hover {
+    color: brown;
+    font-weight: bold;
+}
+
+/** 自定义其他点击态样式类 **/
+.other-navigator-hover {
+    color: red;
+}
+
+.labelText_Blue {
+    padding-top: 5px;
+    padding-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: deepskyblue;
+}
+
+.labelText_Red {
+    padding-top: 5px;
+    padding-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+
+.labelText_Black {
+    padding-top: 5px;
+    padding-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+}
+
+.labelText_Green {
+    padding-top: 5px;
+    padding-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.labelText_Orange {
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: orangered;
+}
+
+/*Calendar CSS*/
+.box {
+    display: flex;
+}
+
+.box-lr {
+    flex-direction: row;
+}
+
+.box-rl {
+    flex-direction: row-reverse;
+}
+
+.box-tb {
+    flex-direction: column;
+}
+
+.box-bt {
+    flex-direction: column-reverse;
+}
+
+.box-pack-center {
+    justify-content: center;
+    font-weight: bold;
+}
+
+.box-pack-start {
+    justify-content: flex-start;
+}
+
+.box-pack-end {
+    justify-content: flex-end;
+}
+
+.box-pack-between {
+    justify-content: space-between;
+}
+
+.box-pack-around {
+    justify-content: space-around;
+}
+
+.box-align-center {
+    font-weight: bold;
+    align-items: center;
+}
+
+.box-align-start {
+    align-items: flex-start;
+}
+
+.box-align-end {
+    align-items: flex-end;
+}
+
+.self-align-center {
+    align-self: center;
+    margin: 0 auto;
+}
+
+.self-align-start {
+    align-self: flex-start;
+}
+
+.self-align-end {
+    align-self: flex-end;
+}
+
+.self-align-stretch {
+    align-self: stretch;
+}
+
+.box-wrap {
+    flex-wrap: wrap;
+}
+
+.box-nowrap {
+    flex-wrap: nowrap;
+}
+
+.flex {
+    flex-grow: 1;
+}
+
+.shrink {
+    flex-shrink: 1;
+}
+
+.bg {
+    background-image: linear-gradient(to bottom, #faefe7, #ffcbd7);
+    overflow: hidden;
+}
+
+.brown-color {
+    color: #784344;
+}
+
+.pink-color {
+    color: #ff629a;
+}
+
+.white-color {
+    color: #fff;
+}
+
+.fs24 {
+    font-size: 24 rpx;
+}
+
+.fs28 {
+    font-size: 28 rpx;
+}
+
+.fs32 {
+    font-size: 32 rpx;
+}
+
+.fs36 {
+    font-size: 36 rpx;
+}
+
+.button-hover {
+    background-color: red;
+}
+
+/** 添加自定义button点击态样式类**/
+.other-button-hover {
+    background-color: blue;
+}
+
+.section{
+    margin-bottom: 40px;
+}
